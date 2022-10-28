@@ -1,0 +1,586 @@
+@import "reset.css";
+
+
+
+
+body{
+	background-color:#aaa;
+}
+
+.wrapper {
+	overflow: hidden;
+	
+	min-height: 100%;
+	padding: 20px;
+}
+
+[class*="__container"]{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.game {
+}
+.game__container {
+}
+.game__body {
+	height: 900px;
+background-color: #000;
+position: relative;
+overflow: hidden;
+}
+
+
+ [class*="__column"]{
+	background: url("../img/1616543001_51-p-fon-kirpich-64.jpg") 0 0 / cover;
+	width: 70px;
+	height: 300px;
+	display: inline-block;
+	position: absolute;
+} 
+
+
+.game__column1 {
+	top: 50px;
+	left: 100px;
+}
+.game__column2 {
+	top: 50px;
+	left: 250px;
+}
+.game__column3 {
+	top: 100px;
+	left: 400px;
+}
+.game__column4 {
+	top: 100px;
+	left: 550px;
+
+}
+.game__column5 {
+	top: 50px;
+	left: 700px;
+}
+.game__column6 {
+	top: 50px;
+	left: 850px;
+}
+.game__column7 {
+	width: 79px;
+	height: 70px;
+	display: inline-block; 
+	position: absolute;
+	top: 250px;
+	left: 471px;
+	background: url("../img/1616543001_51-p-fon-kirpich-64.jpg") 0 0 / 310px no-repeat;
+}
+.game__column8 {
+	top: 550px;
+	left: 850px;
+}
+.game__column9 {
+
+	top: 550px;
+	left: 700px;
+}
+.game__column10 {
+	width: 70px;
+	height: 250px;
+	display: inline-block; 
+	position: absolute;
+	
+	top: 450px;
+	left: 550px;
+}
+.game__column11 {
+	width: 70px;
+	height: 250px;
+	display: inline-block; 
+	position: absolute;
+	
+	top: 450px;
+	left: 400px;
+}
+.game__column12 {
+	top: 550px;
+	left: 250px;
+}
+.game__column13 {
+	top: 550px;
+	left: 100px;
+}
+.game__column14 {
+	width: 79px;
+	height: 70px;
+	top: 550px;
+	left: 471px;
+	background: url("../img/1616543001_51-p-fon-kirpich-64.jpg") 0 0 / 310px no-repeat;
+}
+.game__column15 {
+	border: 10px solid rgb(47, 0, 255);
+	border-bottom: none;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 750px;
+	left: 440px;
+	box-shadow: 0px 0px 0px 10px rgb(255, 255, 255), inset 0px 0px 0px 10px rgb(255, 0, 0);
+	animation-name: column15;
+	animation-timing-function: linear;
+	animation-delay: 25s;
+	animation-duration: 5s;
+	z-index: 52;
+	animation-fill-mode: forwards;
+}
+@keyframes column15{
+	0%{
+		visibility: hidden;
+		z-index: 3;
+	}
+	50%{
+		z-index: 3;
+		visibility: hidden;
+	}
+	100%{
+		visibility: hidden;
+		z-index: 3;
+		animation-fill-mode: forwards;
+	}
+}
+
+.game__column15--bg{
+background: url("../img/kisspng-double-headed-eagle-heraldry-byzantine-empire-coat-eagle-5acfad8d38fe66.1710222915235598212335.jpg") 0 0 / contain;
+}
+
+.af img{
+	width: 200px;
+	position: relative;
+	top: 352px;
+	left: 420px;
+	animation-name: af;
+	animation-timing-function: linear;
+	animation-delay: 30s;
+	animation-duration: 10s;
+	visibility: hidden;
+}
+@keyframes af {
+	0%{
+		z-index: 55;
+	}
+	50%{
+		z-index: 55;
+	}
+	100%{
+	z-index: 55;
+	visibility: visible;
+	}
+}
+
+.bomba img{
+	width: 200px;
+	position: relative;
+	top: 550px;
+	left: 420px;
+	
+	animation-name: bomba;
+	animation-timing-function: linear;
+	animation-delay: 30s;
+	animation-duration: 7s;
+	animation-fill-mode: forwards;
+}
+@keyframes bomba {
+	0%{
+		
+			}
+			50%{
+				
+			}
+			100%{
+			z-index: 53;
+			visibility: hidden;
+			}
+}
+
+
+.game__tank{
+	
+	
+}
+.game__tank img{
+	width: 50px;
+	position: relative;
+	transform: rotate(90deg);
+	animation-name:tank;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	
+}
+
+@keyframes tank {
+	0%{
+		top: 0;
+		left: 0;
+	}
+	10%{
+		transform: rotate(90deg);
+	}
+	20%{
+		transform: rotate(90deg);
+		
+	}
+	30%{
+		transform: rotate(90deg);
+	}
+	40%{
+		transform: rotate(90deg);
+	}
+	
+	50%{
+		
+		transform: rotate(90deg); 
+	} 
+	60%{
+		transform: rotate(90deg);
+	}
+	70%{
+		transform: rotate(90deg);
+	}
+	80%{
+		animation-play-state: paused;
+		transform: rotate(180deg);
+		top: 0px;
+		left: 940px;
+	}
+	90%{
+		transform: rotate(180deg);
+	}
+	92%{
+		transform: rotate(180deg);
+	}
+	94%{
+		transform: rotate(180deg);
+	}
+	96%{
+		transform: rotate(180deg);
+	}
+	98%{
+		transform: rotate(180deg);
+	}
+	
+	100%{
+		animation-play-state: paused;
+		
+		transform: rotate(230deg);
+		
+		top: 700px;
+		left: 940px;
+	}
+}
+.game__fack img {
+	width: 50px;
+	position: relative;
+	animation-name:fack;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	top: 0px;
+	left: 0;
+	visibility: hidden;
+}
+
+@keyframes fack {
+	0%{
+		visibility: hidden;
+	}
+	10%{
+		visibility: hidden;
+	}
+	29%{
+		visibility: visible;
+	}
+
+	30%{
+		visibility: visible;
+	}
+	40%{
+		visibility: visible;
+	}
+	50%{
+		visibility: visible;
+	}
+	60%{
+		visibility: visible;
+	}
+	70%{
+		visibility: hidden;
+	}
+	80%{
+		visibility: hidden;
+		top: 0px;
+		left: 940px;
+	}
+	
+	
+	100%{
+		visibility: hidden;
+		
+		top: 700px;
+		left: 940px;
+	}
+}
+.rocket{
+	
+}
+.rocket img{
+	width: 70px;
+	position: relative;
+	top: 600px;
+	left: 940px;
+	transform: rotate(200deg);
+	animation-delay: 21s;
+	animation-duration: 5s;
+	animation-name: rocket;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+@keyframes rocket{
+	0%{
+		
+	opacity: 0;
+	top: 600px;
+	left: 940px;
+	}
+	5%{
+		opacity: 1;
+		transform: rotate(200deg);
+	}
+	20%{
+		
+		opacity: 1;
+		transform: rotate(200deg);
+	}
+	40%{
+		opacity: 1;
+		transform: rotate(200deg);
+	}
+	60%{
+		opacity: 1;
+		
+		transform: rotate(200deg);
+	}
+	80%{
+		opacity: 1;
+		
+		transform: rotate(200deg);
+	}
+	90%{
+		opacity: 1;
+		
+		transform: rotate(200deg);
+	}
+	100%{
+		opacity: 0;
+		top: 750px;
+		left: 460px;
+		transform: rotate(200deg);
+	}
+}
+
+.prapor  {
+width: 180px;
+height: 150px; 
+position: relative;
+top: 10px;
+left: 730px;
+border-radius: 25px 25px 0px 25px;
+background: url("../img/prapor.jpeg") 0 0 / cover;
+text-transform: uppercase;
+text-align: center;
+font-size: 26px;
+animation-name: prapor;
+animation-delay: 22s;
+animation-timing-function: linear;
+animation-duration: 50s;
+opacity: 0;
+}
+@keyframes prapor{
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+.tank1 img{
+	width: 50px;
+	position: relative;
+	top: 150px;
+	left: 187px;
+	animation-name: t1;
+	animation-delay: 28s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.tank2 img{
+	width: 50px;
+	position: relative;
+	top: 100px;
+	left: 335px;
+	animation-name: t1;
+	animation-delay: 28s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.tank3 img{
+	width: 50px;
+	position: relative;
+	top: 50px;
+	left: 635px;
+	animation-name: t1;
+	animation-delay: 28s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.tank4 img{
+	width: 50px;
+	position: relative;
+	top: 0px;
+	left: 790px;
+	animation-name: t1;
+	animation-delay: 28s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+@keyframes t1{
+	0%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: hidden;
+	}
+}
+
+div.circle1,.circle2,.circle3,.circle4 {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: rgb(158, 61, 54);
+	position: relative;
+}
+.circle1 {
+	bottom: 65px;
+	left: 205px;
+	animation-name: circle1;
+	animation-delay: 1s;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+@keyframes circle1{
+	0%{
+		bottom: 95px;
+		left: 200px;
+		opacity: 0;
+	}
+	1%{
+		opacity: 1;
+	}
+	
+	100%{
+		bottom: 900px;
+		left: 200px;
+		opacity: 1;
+		visibility: hidden;
+	}
+}
+
+.circle2 {
+	bottom: 80px;
+	left: 352px;
+	animation-name: circle2;
+	animation-delay: 3.5s;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+@keyframes circle2{
+	0%{
+		bottom: 120px;
+		left: 348px;
+		opacity: 0;
+	}
+	1%{
+		opacity: 1;
+	}
+	100%{
+		bottom: 900px;
+		left: 348px;
+		opacity: 1;
+		visibility: hidden;
+	}
+}
+
+.circle3 {
+	bottom: 92px;
+	left: 652px;
+	animation-name: circle3;
+	animation-delay: 8s;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+@keyframes circle3{
+	0%{
+		bottom: 140px;
+		left: 648px;
+		opacity: 0;
+	}
+	1%{
+		opacity: 1;
+	}
+	100%{
+		bottom: 900px;
+		left: 648px;
+		opacity: 1;
+		visibility: hidden;
+	}
+}
+
+.circle4 {
+	bottom: 108px;
+	left: 807px;
+	animation-name: circle4;
+	animation-delay: 10s;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+@keyframes circle4{
+	0%{
+		bottom: 165px;
+		left: 803px;
+		opacity: 0;
+	}
+	1%{
+		opacity: 1;
+	}
+	100%{
+		bottom: 900px;
+		left: 803px;
+		opacity: 1;
+		visibility: hidden;
+	}
+}
